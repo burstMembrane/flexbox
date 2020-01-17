@@ -20,7 +20,7 @@ const initBoxes = (num) => {
 
 }
 
-boxArray = initBoxes(4);
+boxArray = initBoxes(8);
 
 
 const makeRandomColor = () => {
