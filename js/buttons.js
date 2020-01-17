@@ -30,7 +30,7 @@ justifyContent.addEventListener('click', () => {
 });
 
 alignItems.addEventListener('click', () => {
-    const options = ["stretch", "center", "start", "end", "flex-start", "flex-end"];
+    const options = ["stretch", "center", "start", "end", "flex-start", "flex-end", "baseline"];
     stepThroughOpts(alignItems, 'align-items', options)
 
 });
@@ -48,6 +48,6 @@ alignContent.addEventListener('click', () => {
 
 randomSizes.addEventListener('click', () => {
     boxArray.forEach((box) => {
-        randomSize(box, 100, 300);
+        randomSize(box, 100, 200);
     })
 })
