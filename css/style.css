@@ -48,9 +48,8 @@ button:hover {
 
 p {
     font-size: 48px;
-    margin: 0;
-    padding: 25% 0;
-    align-self: baseline;
+    margin: auto 0;
+    padding: 25%;
     color: white;
     text-align: center;
 }

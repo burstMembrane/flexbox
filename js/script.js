@@ -10,6 +10,7 @@ const makeFlexItems = (num) => {
 }
 
 const initBoxes = (num) => {
+    // remove old boxes first
     if(document.querySelector('flex-item')) {
         removeBoxes();
     }
