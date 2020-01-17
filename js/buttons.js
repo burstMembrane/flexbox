@@ -1,11 +1,13 @@
-cnt = document.querySelector('.container');
+const cnt = document.querySelector('.container');
 
-flexDirection = document.querySelector('.flexdirection')
-justifyContent = document.querySelector('.justifycontent')
-alignItems = document.querySelector('.alignitems');
-flexWrap = document.querySelector('.flexwrap');
-alignContent = document.querySelector('.aligncontent');
-randomSizes = document.querySelector('.randomsizes');
+const flexDirection = document.querySelector('.flexdirection')
+const justifyContent = document.querySelector('.justifycontent')
+const alignItems = document.querySelector('.alignitems');
+const flexWrap = document.querySelector('.flexwrap');
+const alignContent = document.querySelector('.aligncontent');
+const randomSizes = document.querySelector('.randomsizes');
+const addBox = document.querySelector('.addbox');
+const removeBox = document.querySelector('.removebox');
 
 let i = 0;
 
@@ -50,4 +52,13 @@ randomSizes.addEventListener('click', () => {
     boxArray.forEach((box) => {
         randomSize(box, 100, 200);
     })
+});
+
+addBox.addEventListener('click', () => {
+    makeNewBox();
+    console.log('added box')
+})
+removeBox.addEventListener('click', () => {
+    removeLastBox();
+    console.log('removed box')
 })

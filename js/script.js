@@ -20,6 +20,25 @@ const initBoxes = (num) => {
 
 }
 
+
+const makeNewBox = () => {
+    const newbox = initBoxes(1);
+    console.log(newbox[newbox.length - 1]);
+    changeColor(newbox[newbox.length - 1], makeRandomColor());
+    boxArray.push(newbox[newbox.length - 1])
+    newbox[newbox.length - 1].firstElementChild.innerHTML = newbox.length;
+}
+
+const removeLastBox = () => {
+    const boxes = document.querySelectorAll('.flex-item') || null;
+    const lastbox = boxes[boxes.length - 1]
+
+
+    if(boxes.length > 0) {
+        cnt.removeChild(lastbox)
+    }
+
+}
 boxArray = initBoxes(8);
 
 
